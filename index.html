@@ -56,7 +56,7 @@
     });
     $("#btn").on("click", () => {
       $.ajax({
-        url: "http://127.0.0.1:8099/papago",
+        url: "http://keonwoo-papago.herokuapp.com/papago",
         method: "POST",
         data: {
           txt: $("#txt").val(),
@@ -81,7 +81,7 @@
     });
     $("#txt").on("keydown", function () {
       $.ajax({
-        url: "http://127.0.0.1:8099/papago",
+        url: "http://keonwoo-papago.herokuapp.com/papago",
         method: "POST",
         data: { typing: $("#txt").val() },
       }).done((response) => {
