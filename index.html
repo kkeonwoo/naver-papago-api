@@ -51,7 +51,7 @@
     </main>
   </body>
   <script>
-    let selLanguage = "en";
+    let selLanguage = "ko";
     $("#language").on("change", function () {
       selLanguage = $(this).val();
     });
@@ -65,7 +65,7 @@
         },
       }).done((response) => {
         // console.log(response);
-        const list = response.result.split(" ").map(function (item) {
+        const list = response.result.split("").map(function (item) {
           return `<span>${item}</span>`;
         });
         const tempHtml = list.join("");
