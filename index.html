@@ -51,13 +51,13 @@
     </main>
   </body>
   <script>
-    let selLanguage = "ko";
+    let selLanguage = "en";
     $("#language").on("change", function () {
       selLanguage = $(this).val();
     });
     $("#btn").on("click", () => {
       $.ajax({
-        url: "http://keonwoo-papago.herokuapp.com/papago",
+        url: "http://keonwoo-papago.herokuapp.com",
         method: "POST",
         data: {
           txt: $("#txt").val(),
@@ -82,7 +82,7 @@
     });
     $("#txt").on("keydown", function () {
       $.ajax({
-        url: "http://keonwoo-papago.herokuapp.com/papago",
+        url: "http://keonwoo-papago.herokuapp.com",
         method: "POST",
         data: { typing: $("#txt").val() },
       }).done((response) => {
