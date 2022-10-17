@@ -80,15 +80,15 @@
         });
       });
     });
-    $("#txt").on("keydown", function () {
-      $.ajax({
-        url: "http://keonwoo-papago.herokuapp.com",
-        method: "POST",
-        data: { typing: $("#txt").val() },
-      }).done((response) => {
-        console.log(response);
-      });
-    });
+    // $("#txt").on("keydown", function () {
+    //   $.ajax({
+    //     url: "http://keonwoo-papago.herokuapp.com/papago",
+    //     method: "POST",
+    //     data: { typing: $("#txt").val() },
+    //   }).done((response) => {
+    //     console.log(response);
+    //   });
+    // });
     $("#reset").on("click", function () {
       $("#form").on("reset");
     });
